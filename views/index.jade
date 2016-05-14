@@ -1,0 +1,101 @@
+extends layout
+
+block content
+	nav.navbar-inverse.navbar-fixed-top
+		.container
+			.navbar-header
+				a.navbar-brand(href='#') イユンヨン
+			ul.nav.navbar-nav.pull-right
+				li
+					a(href='#') Home
+				li
+					a(href='#about') About
+				li
+					a(href='#contact') Contact
+		
+		
+	.container
+		#myCarousel.carousel.slide(data-ride='carousel')
+	
+			ol.carousel-indicators
+				li.active(data-target="#myCarousel", data-slide-to='0')
+				li(data-target="#myCarousel", data-slide-to='1')
+				li(data-target="#myCarousel", data- slide-to='2')
+			
+			.carousel-inner
+				.item.active
+					img(src='images/carousel1.jpg', alt='')
+					.container
+						.carousel-caption
+							p
+								| キャンパスで卒業写真を撮る日に
+				.item
+					img(src='images/carousel2.jpg', alt='')
+					.container
+						.carousel-caption
+							p
+								| 私のベストフレンド、ロマ
+				.item
+					img(src='images/carousel3.jpg', alt='')
+					.container
+						.carousel-caption
+							p
+								| 伊豆のテディベアミュージアムで
+				
+			a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left
+			
+			a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right
+	
+	#about.container.bottom30(align='center')
+		h1.text-primary Welcome
+			span.glyphicon.glyphicon-heart
+		p This is a sample page.
+		br
+		hr
+	
+	.container.top30.bottom30
+		h3 モチベーション 
+			span.glyphicon.glyphicon-fire
+			
+		p
+			| 最初に日本語の勉強を始めたのは高校生の頃でした。日本文学が好きだった母が日本語を勉強していたので、私も自然に日本語を学ぶようになりました。高校１年生の時、YFU(Youth For Understanding)という機関のプログラムに志願し、日本の姉妹学校に１ヵ月間、短期留学をしました。その時、ひらがなと簡単なあいさつぐらいしかできなかった私を、みんな暖かく受け入れてくれ、本当に心に残る思い出を作って帰りました。その瞬間からずっと日本に関心を持ち続けて、日本のドラマを見ながら日本語を学びました。また何度か日本へ旅行して、料理や文化など日本について知ることで、もっと日本が好きになりました。そして、日本で働きたいと思うようになりました。多くある日本の企業の中で、ユニークな企業の風土と様々な変化にトライするところに魅力を感じ、楽天へ志願することにしました。
+	.container
+		hr
+		
+	.container.top30.bottom30
+		h3 大学時代  
+			span.glyphicon.glyphicon-education
+			
+		p
+			| 大学時代は、フットサル部で部活をしながら心身を鍛錬しました。サブキャプテンになり、校内フットサル大会に参加して準優勝をしました。練習は大変でしたが、部活をしながらチームワークと共同体精神を学ぶことができました。そして、幼い時から海外で広い世界を冒険したかったので、外国語の勉強を頑張ってきました。韓国に勉強をしに来た日本人留学生に韓国を紹介し、韓国語と日本語をお互いに教える言語交換プログラムに参加しました。また、留学生会で友達を作って文化共有をしたりしました。
+	.container
+		hr
+	
+	#contact.container.top30.bottom30
+		h3 コンタクト 
+		p
+			| Yoonyoung Lee
+			br
+			span.glyphicon.glyphicon-phone
+			phone  : 82-10-9276-9412
+			br
+			span.glyphicon.glyphicon-envelope
+			email  : littlefish412@gmail.com
+						
+				
+	.container
+		hr
+
+		p
+			a(href='#', role='button') Back to the Top
+			
+		footer
+			p.text-muted May 14th 2016.
+	
+	
+	
+	
+	
+	
